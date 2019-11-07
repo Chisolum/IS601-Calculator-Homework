@@ -1,3 +1,4 @@
+
 def addition(a,b):
     return a + b
 
@@ -12,6 +13,9 @@ def division(a,b):
 
 def square(a):
     return a * a
+
+def sqrt(a):
+    return a**.5
 
 
 class Calculator:
@@ -32,4 +36,7 @@ class Calculator:
             return self.result
         def square(self,a):
             self.result = square(a)
+            return self.result
+        def sqrt(self,a):
+            self.result = sqrt(a)
             return self.result

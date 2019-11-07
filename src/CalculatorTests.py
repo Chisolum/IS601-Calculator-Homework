@@ -1,6 +1,6 @@
 import unittest
 from Calculator import Calculator
-
+import math
 class MyTestCase(unittest.TestCase):
 
     def setUp(self) -> None:
@@ -31,6 +31,10 @@ class MyTestCase(unittest.TestCase):
     def test_square_method_calculator(self):
             self.assertEqual(self.calculator.square(2), 4)
             self.assertEqual(self.calculator.result, 4)
+
+    def test_sqrt_method_calculator(self):
+            self.assertEqual(self.calculator.sqrt(4), 2)
+            self.assertEqual(self.calculator.result, 2)
 
 
 
