@@ -1,4 +1,5 @@
-
+import math
+from decimal import Decimal
 def addition(a,b):
     a = int(a)
     b =  int(b)
@@ -19,9 +20,9 @@ def multiplication(a,b):
 
 def division(a,b):
     a = int(a)
-    b =  int(b)
-    c =  a / b
-    return c
+    b = int(b)
+    c =  b/ a
+    return round(c,9)
 
 
 def square(a):
@@ -32,6 +33,10 @@ def square(a):
 def sqrt(a):
     a = int(a)
     c =  a**.5
+    if c > 10:
+        c = round(c, 8)
+    else:
+        c = round(c, 9)
     return c
 
 
