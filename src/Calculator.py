@@ -1,21 +1,38 @@
 
 def addition(a,b):
-    return a + b
+    a = int(a)
+    b =  int(b)
+    c = a + b
+    return c
 
 def subtraction(a,b):
-    return a - b
+    a = int(a)
+    b = int(b)
+    c =  b - a
+    return c
 
 def multiplication(a,b):
-    return a * b
+    a = int(a)
+    b =  int(b)
+    c =  a*b
+    return c
 
 def division(a,b):
-    return a / b
+    a = int(a)
+    b =  int(b)
+    c =  a / b
+    return c
+
 
 def square(a):
-    return a * a
+    a = int(a)
+    c =   a * a
+    return c
 
 def sqrt(a):
-    return a**.5
+    a = int(a)
+    c =  a**.5
+    return c
 
 
 class Calculator:
